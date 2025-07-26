@@ -1,7 +1,7 @@
 function Navbar(){
     return(
         <>
-        <div className="h-20 w-screen bg-amber-50 flex">
+        <div className="h-20 w-screen bg-amber-50 flex fixed">
             <div className="border-1 border-black h-20 w-50">
 
             </div>
