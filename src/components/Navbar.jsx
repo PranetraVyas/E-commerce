@@ -1,15 +1,24 @@
 import { Search } from 'lucide-react';
 import { User } from 'lucide-react';
 import { ShoppingBag } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
+import logo from '../assets/logo.svg'
 
 function Navbar(){
     return(
         <>
         <div className="h-20 w-screen bg-amber-50 flex fixed">
-            <div className="border-1 border-black h-20 w-50">
-                <img src="logo.svg" alt="" />
+            <div className="h-20 w-50 flex justify-center items-center">
+                <img src={logo} alt="no photo" className='size-20'/>
             </div>
-            <div className="border-1 border-amber-400 h-20 w-200">
+            <div className="h-20 w-200 flex justify-center items-center">
+                <ol className='flex gap-15'>
+                    <li><a href="" className='flex items-center gap-1'>Categories<ChevronDown className='size-5' /></a></li>
+                    <li><a href="">boAt Personalisation</a></li>
+                    <li><a href="">Corporate Orders</a></li>
+                    <li><a href="">Gifting Store</a></li>
+                    <li><a href="" className='flex items-center gap-1'>More<ChevronDown className='size-5'/></a></li>
+                </ol>
             </div>
             <div className="h-20 w-140 flex justify-center items-center gap-20">
                 <span className='absolute left-265'>
