@@ -7,7 +7,7 @@ import logo from '../assets/logo.svg'
 function Navbar(){
     return(
         <>
-        <div className="h-20 w-screen bg-amber-50 flex fixed">
+        <div className="h-20 w-screen bg-amber-50 flex fixed z-50">
             <div className="h-20 w-50 flex justify-center items-center">
                 <img src={logo} alt="no photo" className='size-20'/>
             </div>

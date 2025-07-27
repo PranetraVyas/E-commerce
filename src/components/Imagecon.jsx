@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { ArrowLeft } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+
 
 import p1 from '../assets/p1.webp';
 import p2 from '../assets/p2.webp';
@@ -17,12 +20,13 @@ function Imagecon(){
         return () => clearInterval(interval);
     }, []);
 
-    
-
-
     return(
         <>
-        <div className="border-1 border-black h-166 w-370 ml-10 mt-20 overflow-hidden">
+        <div className="h-166 w-370 ml-10 mt-20 overflow-hidden relative">
+            
+            <button className="absolute top-75 left-5 h-10 w-10 bg-black text-white rounded-full flex justify-center items-center" onClick={()=> setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length )}><ArrowLeft /></button>
+            <button className="absolute right-5 top-73 h-10 w-10 bg-black text-white rounded-full  flex  justify-center items-center" onClick={()=> setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}><ArrowRight /></button>  
+                
             <img src={images[currentIndex]} alt="" className="duration-1000 object-cover h-full w-full"/>        
         </div>
         </>
