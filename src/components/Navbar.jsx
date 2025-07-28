@@ -14,11 +14,11 @@ function Navbar(){
             </div>
             <div className="h-20 w-200 flex justify-center items-center">
                 <ol className='flex gap-15'>
-                    <li><a href="" className='flex items-center gap-1'>Categories<ChevronDown className='size-5' /></a></li>
-                    <li><a href="">boAt Personalisation</a></li>
-                    <li><a href="">Corporate Orders</a></li>
-                    <li><Link to="/Gifting-with-boat">Gifting Store</Link></li>
-                    <li><a href="" className='flex items-center gap-1'>More<ChevronDown className='size-5'/></a></li>
+                    <li><a href="" className='flex items-center gap-1 hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>Categories<ChevronDown className='size-5' /></a></li>
+                    <li><a href="" className='hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>boAt Personalisation</a></li>
+                    <li><a href="" className='hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>Corporate Orders</a></li>
+                    <li><Link to="/Gifting-with-boat" className='hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>Gifting Store</Link></li>
+                    <li><a href="" className='flex items-center gap-1 hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>More<ChevronDown className='size-5'/></a></li>
                 </ol>
             </div>
             <div className="h-20 w-140 flex justify-center items-center gap-20">
