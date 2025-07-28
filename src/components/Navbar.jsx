@@ -3,20 +3,21 @@ import { User } from 'lucide-react';
 import { ShoppingBag } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
 import logo from '../assets/logo.svg'
+import { Link , Outlet } from 'react-router-dom';
 
 function Navbar(){
     return(
         <>
         <div className="h-20 w-screen bg-amber-50 flex fixed z-50">
             <div className="h-20 w-50 flex justify-center items-center">
-                <img src={logo} alt="no photo" className='size-20'/>
+                <Link to='/'><img src={logo} alt="no photo" className='size-20'/></Link>
             </div>
             <div className="h-20 w-200 flex justify-center items-center">
                 <ol className='flex gap-15'>
                     <li><a href="" className='flex items-center gap-1'>Categories<ChevronDown className='size-5' /></a></li>
                     <li><a href="">boAt Personalisation</a></li>
                     <li><a href="">Corporate Orders</a></li>
-                    <li><a href="">Gifting Store</a></li>
+                    <li><Link to="/Gifting-with-boat">Gifting Store</Link></li>
                     <li><a href="" className='flex items-center gap-1'>More<ChevronDown className='size-5'/></a></li>
                 </ol>
             </div>
@@ -31,6 +32,8 @@ function Navbar(){
                 </div>
             </div>
         </div>
+
+        <Outlet/>
         </>
     )
 }
