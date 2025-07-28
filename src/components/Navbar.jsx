@@ -16,7 +16,7 @@ function Navbar(){
                 <ol className='flex gap-15'>
                     <li><a href="" className='flex items-center gap-1 hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>Categories<ChevronDown className='size-5' /></a></li>
                     <li><a href="" className='hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>boAt Personalisation</a></li>
-                    <li><a href="" className='hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>Corporate Orders</a></li>
+                    <li><Link to="/Corporate-Orders" className='hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>Corporate Orders</Link></li>
                     <li><Link to="/Gifting-with-boat" className='hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>Gifting Store</Link></li>
                     <li><a href="" className='flex items-center gap-1 hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>More<ChevronDown className='size-5'/></a></li>
                 </ol>
