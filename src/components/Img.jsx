@@ -16,7 +16,7 @@ function Img(){
                 </h1>
             </div>
             <div className='h-35 flex justify-center items-center'>
-                <h1 className='text-6xl font-bold mb-15'>
+                <h1 className='text-6xl font-bold mb-15s'>
                     Give Gift that Truly Resonates !
                 </h1>
             </div>
