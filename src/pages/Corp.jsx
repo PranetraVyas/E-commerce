@@ -14,21 +14,21 @@ function Corp(){
             <div className="flex">
                 <Offer/>
                 <img src={coop} alt="" className='h-190'/>  
-                <div className="border-1 border-black w-screen flex flex-col justify-center items-center"> 
-                    <div>
-                        <h1>Your Bulk Orders</h1>
-                        <h1>Are now Hassle Free</h1>
+                <div className="border-1 border-black w-screen flex flex-col justify-center items-center "> 
+                    <div className="mr-20 mt-20">
+                        <h1 className="font-bold text-6xl">Your Bulk Orders</h1>
+                        <h1 className="text-4xl">Are now Hassle Free</h1>
                     </div>
-                    <div>
-                        <h1>Got A Big BoAt Order?</h1>
-                        <h1>Come sail with us</h1>
+                    <div className="mr-12 mt-10">
+                        <h1 className="font-bold text-5xl">Got A Big BoAt Order?</h1>
+                        <h1 className="text-2xl">Come sail with us</h1>
                     </div>
-                    <div>
-                        <h1>For Shipments of 25 units or more,</h1>
-                        <h1>Hit us up!</h1>
+                    <div className="mr-45 mt-15">
+                        <h1 className="text-2xl">For Shipments of 25 units or more,</h1>
+                        <h1 className="font-bold text-2xl">Hit us up!</h1>
                     </div>
-                    <div>
-                        <button>Submit Your Requirement</button>
+                    <div className="mr-20 mt-5 flex justify-center w-full">
+                        <button className="bg-black text-amber-50 p-5 w-120 rounded-2xl text-2xl">Submit Your Requirement</button>
                     </div>
                 </div>    
             </div>
