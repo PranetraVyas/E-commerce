@@ -17,12 +17,12 @@ function Home(){
                 <Imagecon/>
             </div>
             <div>
+                <Secbar/>
                 <Cards/>
                 <Add/>
                 <Cardsec/>
             </div>
             <div className="flex-col">
-                <Secbar/>
                 <Footer/>
             </div>
         </div>
