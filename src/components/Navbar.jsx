@@ -11,21 +11,26 @@ import UseIsLargeScreens from './UseIsLargeScreen';
 function Navbar() {
 
     const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+    const [isSearchOpen , setIsSearchOpen] = useState(false);
     const isLargeScreen = UseIsLargeScreens();
 
     const toggleCategoryDropdown = () => {
         setIsCategoryOpen(!isCategoryOpen);
     };
 
+    const toggleSearchDropdown = () => {
+        setIsSearchOpen(!isSearchOpen);
+    };
+
     return (
         <>
             <div className="w-screen bg-white flex fixed z-50 justify-between">
-                <div className="sm:hidden justify-center items-center">
-                    <ol className='flex'>
-                        <li className="relative">
+                <div className="sm:hidden flex justify-center items-center ml-2">
+                    <ol className=''>
+                        <li className=''>
                             <button
                                 onClick={toggleCategoryDropdown}
-                                className="flex items-center gap-1 hover:font-bold hover:underline decoration-red-600 transition-all duration-200 decoration-1">
+                                className="">
                                 <AlignJustify />
                             </button>
                             {isCategoryOpen && (
@@ -42,7 +47,7 @@ function Navbar() {
                 </div>
 
 
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center ml-15">
                     <Link to='/'><img src={logo} alt="no photo" className='size-10' /></Link>
                 </div>
 
@@ -59,7 +64,22 @@ function Navbar() {
                 )}
 
 
-                <div className="flex justify-center items-center ">
+                <div className="sm:hidden flex justify-center items-center gap-2 mr-2">
+                    <button onClick={toggleSearchDropdown}>
+                        <Search className=''/>
+                    </button>
+                    
+                    {isSearchOpen && (
+                         <input type="text" className="w-30 bg-gray-200 rounded-3xl text-center" placeholder="Search" />
+                    )}
+                    <div className='flex gap-2'>
+                        <User />
+                        <ShoppingBag />
+                    </div>
+                </div>
+
+                {isLargeScreen && (
+                    <div className="flex justify-center items-center">
                     <span className='absolute left-265'>
                         <Search />
                     </span>
@@ -69,6 +89,7 @@ function Navbar() {
                         <ShoppingBag />
                     </div>
                 </div>
+                )}
             </div>
 
             <Outlet />
