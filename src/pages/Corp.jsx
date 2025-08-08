@@ -14,7 +14,7 @@ function Corp(){
             <div className="flex">
                 <Offer/>
                 <img src={coop} alt="" className='h-190'/>  
-                <div className="border-1 border-black w-screen flex flex-col justify-center items-center "> 
+                <div className="w-screen flex flex-col justify-center items-center "> 
                     <div className="mr-20 mt-20">
                         <h1 className="font-bold text-6xl">Your Bulk Orders</h1>
                         <h1 className="text-4xl">Are now Hassle Free</h1>
