@@ -13,9 +13,10 @@ function Corp(){
             <Navbar/>
             <div className="flex">
                 <Offer/>
-                <img src={coop} alt="" className='h-190'/>  
-                <div className="w-screen flex flex-col justify-center items-center "> 
-                    <div className="mr-20 mt-20">
+                <div className="flex flex-col justify-center items-center ml-5">
+                <img src={coop} alt="" className='h-70 w-100'/>  
+                <div className="ml-5 w-screen flex flex-col justify-center items-center "> 
+                    <div className="mr-20 mt-10">
                         <h1 className="font-bold text-6xl">Your Bulk Orders</h1>
                         <h1 className="text-4xl">Are now Hassle Free</h1>
                     </div>
@@ -28,14 +29,15 @@ function Corp(){
                         <h1 className="font-bold text-2xl">Hit us up!</h1>
                     </div>
                     <div className="mr-20 mt-5 flex justify-center w-full">
-                        <button className="bg-black text-amber-50 p-5 w-120 rounded-2xl text-2xl">Submit Your Requirement</button>
+                        <button className="bg-black text-amber-50 p-2 w-50 rounded-2xl text-2xl">Submit Your Requirement</button>
                     </div>
+                </div>
                 </div>    
             </div>
-            <div className="mt-2s">
+            <div className="mt-4s">
                 <Cards/>
             </div>
-            <img src={coops} alt="" className='h-190'/> 
+            <img src={coops} alt="" className='w-screen h-60'/> 
             <Footer/>
         </div>
         </>
