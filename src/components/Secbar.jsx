@@ -8,7 +8,7 @@ function Secbar(){
     return(
         <>
         <div className="bg-gray-500 w-screen h-10 ml-2 flex justify-center">
-            <div className='text-white flex gap-2 items-center'>
+            <div className='text-white flex gap-2 items-center sm:gap-20'>
                 <div className='flex gap-2'>
                      <Shield className='size-5'/>
                      <div>

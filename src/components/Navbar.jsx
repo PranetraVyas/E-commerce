@@ -46,14 +46,14 @@ function Navbar() {
                     </ol>
                 </div>
 
-
-                <div className="flex justify-center items-center ml-15">
+                <div className='w-screen flex justify-center items-center'>
+                <div className="flex justify-center items-center ml-2">
                     <Link to='/'><img src={logo} alt="no photo" className='size-10' /></Link>
                 </div>
 
                 {isLargeScreen && (
                     <div className=" flex justify-center items-center">
-                        <ol className='flex gap-15'>
+                        <ol className='flex gap-2 text-sm'>
                             <li><a href="" className='flex items-center gap-1 hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>Categories<ChevronDown className='size-5' /></a></li>
                             <li><a href="" className='hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>boAt Personalisation</a></li>
                             <li><Link to="/Corporate-Orders" className='hover:font-bold hover:underline decoration-red-600 duration-200 decoration-1 transition-all'>Corporate Orders</Link></li>
@@ -62,6 +62,7 @@ function Navbar() {
                         </ol>
                     </div>
                 )}
+                </div>
 
 
                 <div className="sm:hidden flex justify-center items-center gap-2 mr-2">
