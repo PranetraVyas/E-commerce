@@ -8,17 +8,17 @@ function Footer(){
         <>
         <div className="ml-5 w-screen h-200 flex-col">
             <div className="h-100 bg-gray-300 flex-col justify-center items-center">
-                <img src={logo} alt="no photo" className='size-30 ml-5 mt-10'/>
-                <h1 className='text-3xl ml-5 font-bold'>Subscribe to our email alerts!</h1>
-                <input type="text" className='bg-white p-2 ml-5 mt-3 rounded-sm w-70 h-10' placeholder='Enter your email address' />
+                <img src={logo} alt="no photo" className='size-30 ml-5 mt-10 xl:ml-15 xl:size-50'/>
+                <h1 className='text-3xl ml-5 font-bold xl:ml-15 xl:text-5xl'>Subscribe to our email alerts!</h1>
+                <input type="text" className='bg-white p-2 ml-5 mt-3 rounded-sm w-70 h-10 xl:ml-15' placeholder='Enter your email address' />
             </div>
             <div className="w-screen h-100  flex justify-center items-center">
-                <div className='flex-col gap-4 justify-center items-center text-center'>
-                    <div className='flex justify-center items-center gap-2 mt-35'>
-                    <h1 className='font-bold text-xl'>Lets get social</h1>
-                    <Instagram className='size-4'/>
-                    <Twitch className='size-4'/>
-                    <Facebook className='size-4'/>
+                <div className='flex-col gap-4  justify-center items-center text-center'>
+                    <div className='flex justify-center items-center gap-2 xl:gap-4 mt-35'>
+                    <h1 className='font-bold text-xl xl:text-3xl'>Lets get social</h1>
+                    <Instagram className='size-4 xl:size-7'/>
+                    <Twitch className='size-4 xl:size-7'/>
+                    <Facebook className='size-4 xl:size-7'/>
                     </div>
                     <div className='mt-15 flex flex-col'>
                         <div>

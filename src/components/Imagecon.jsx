@@ -22,10 +22,10 @@ function Imagecon(){
 
     return(
         <>
-        <div className="h-70 w-screen ml-5 overflow-hidden relative flex justify-center sm:ml-10">       
-            <button className="absolute top-35 left-5 h-5 w-5 bg-black text-white rounded-full flex justify-center items-center" onClick={()=> setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length )}><ArrowLeft /></button>
-            <button className="absolute right-5 top-35 h-5 w-5 bg-black text-white rounded-full  flex  justify-center items-center" onClick={()=> setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}><ArrowRight /></button>      
-            <img src={images[currentIndex]} alt="" className="object-cover h-70 w-screen sm:w-screen"/>        
+        <div className="mt-10 h-70 w-screen ml-5 overflow-hidden relative flex justify-center sm:ml-10 xl:h-200 xl:mt-15 ">       
+            <button className="absolute top-35 left-5 h-5 w-5 bg-black text-white rounded-full flex justify-center items-center xl:h-10 xl:w-10 xl:top-100" onClick={()=> setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length )}><ArrowLeft /></button>
+            <button className="absolute right-5 top-35 h-5 w-5 bg-black text-white rounded-full  flex  justify-center items-center xl:h-10 xl:w-10 xl:top-100" onClick={()=> setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}><ArrowRight /></button>      
+            <img src={images[currentIndex]} alt="" className="object-cover h-70 w-screen xl:h-200"/>        
         </div>
         </>
     )

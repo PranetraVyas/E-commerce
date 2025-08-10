@@ -1,11 +1,11 @@
 import { useState , useEffect } from "react";
 
-function UseIsLargeScreen(breakpoint = 1280){
-    const [isLargeScreen , setIsLargeScreen ] = useState(() => window.innerWidth >= breakpoint);
+function UseIsMediumScreen(breakpoint = 640){
+    const [isMediumScreen , setIsMediumScreen ] = useState(() => window.innerWidth >= breakpoint);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsLargeScreen(window.innerWidth >= breakpoint);
+            setIsMediumScreen(window.innerWidth >= breakpoint);
         };
 
 
@@ -14,7 +14,7 @@ function UseIsLargeScreen(breakpoint = 1280){
     }, [breakpoint]);
 
 
-    return isLargeScreen;
+    return isMediumScreen;
 }
 
-export default UseIsLargeScreen
+export default UseIsMediumScreen
